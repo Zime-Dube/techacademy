@@ -3,30 +3,28 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="A webshop to browse and purchase exciting products." />
     <title>Not So Boring Webshop</title>
     <link rel="stylesheet" href="app.css"/>
-    <link rel="stylesheet" href="normalize.css"/>
+    <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-  <main class="container">
+  <div class="container">
     <h1>Not So Boring Webshop</h1>
 
     <div class="search-bar">
-        <label for="searchInput">Search Products</label>
-        <input type="text" id="searchInput" placeholder="Search products by name..." />
-      <div id="loading" style="display:none;">Loading...</div>
-<button onclick="searchProductsByName()">Search</button>
+      <input type="text" id="searchInput" placeholder="Search products by name..." />
+      <button onclick="searchProductsByName()">Search</button>
     </div>
     <div id="topProduct" class="topproduct"></div>
-
-   <div class="product-list" id="productList"></div>
+      
+    <div class="product-list" id="productList"></div>
 
     <div class="pagination">
       <button id="prevBtn" onclick="handlePrev()">Prev</button>
       <button id="nextBtn" onclick="handleNext()">Next</button>
     </div>
   </div>
-    <script src="app.js" defer></script>
+
+  <script src="app.js"></script>
 </body>
 </html>
