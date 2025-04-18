@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Not So Boring Webshop</title>
+    <link rel="stylesheet" href="app.css"/>
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Not So Boring Webshop</h1>
+
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search products by name..." />
+      <button onclick="searchProductsByName()">Search</button>
+    </div>
+    <div id="topProduct" class="topproduct"></div>
+
+   
+
+    <div class="product-list" id="productList"></div>
+
+    <div class="pagination">
+      <button id="prevBtn" onclick="handlePrev()">Prev</button>
+      <button id="nextBtn" onclick="handleNext()">Next</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
