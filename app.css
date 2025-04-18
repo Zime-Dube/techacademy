@@ -84,7 +84,30 @@ button:hover{
     text-align: center;
     margin-top: 20px;
 }
-  
+.pagination button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.pagination button:hover {
+  background-color: #0056b3;
+}
+.pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+} 
 .top-product {
     margin-bottom: 30px;
     text-align: center;
