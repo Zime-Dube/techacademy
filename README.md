@@ -28,4 +28,23 @@ A single-page, no-framework frontend application that displays a list of product
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/yourusername/not-so-boring-webshop-ui.git
-   ```
+   ## Usage
+   
+2. **Open the project:**
+   - Navigate into the project folder.
+   - Open `index.html` in your browser (you can use VS Code Live Server or double-click the file).
+
+3. **Folder Structure**:
+  not-so-boring-webshop-ui/
+├── index.html     # Main HTML file
+├── app.css        # CSS styles
+├── app.js         # JavaScript logic
+└── README.md      # Project documentation
+
+4.**API Info**:
+- Images are fetched from the [Imgflip API](https://imgflip.com/api).
+- Only the first 20 memes are used for products.
+- On load, 20 meme-based products are displayed.
+- Use the search bar to find products by name.
+- Use Prev/Next buttons to paginate through products (10 per page).
+- The top-rated product is shown at the top of the page.
