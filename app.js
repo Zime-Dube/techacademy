@@ -69,35 +69,12 @@ const handlePrev = () => {
   }
 };
 
-const searchProducts = () => {
-  const searchInputElement = document.getElementById('searchInput');
-  const searchInput = searchInputElement.value.trim();
-
-  if (!searchInput) {
-    alert('Please enter a search term.');
-    return;
-  }
-
-  const loading = document.getElementById('loading');
-  loading.style.display = 'block';
-
-  setTimeout(() => {
-    // Simulate search logic
-    const input = searchInput.toLowerCase();
-    const filtered = allProducts.filter(p => p.name.toLowerCase().includes(input));
-    currentPage = 1;
-    renderFilteredProducts(filtered);
-
-    loading.style.display = 'none';
-  }, 1000); // Simulated delay
+const searchProductsByName = () => {
+  const input = document.getElementById('searchInput').value.toLowerCase();
+  const filtered = allProducts.filter(p => p.name.toLowerCase().includes(input));
+  currentPage = 1;
+  renderFilteredProducts(filtered);
 };
-
-// Add the event listener for 'Enter' key
-document.getElementById('searchInput').addEventListener('keypress', function (e) {
-  if (e.key === 'Enter') {
-    searchProducts();
-  }
-});
 
 const renderFilteredProducts = (filteredProducts) => {
   const productList = document.getElementById('productList');
