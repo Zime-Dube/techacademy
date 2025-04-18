@@ -12,7 +12,7 @@ body {
 }
   
 .container {
-    max-width: 1200px;
+    max-width: 90%;
     margin: auto;
 }
   
@@ -21,15 +21,13 @@ h1 {
     margin-bottom: 20px;
 }
   
-.search-bar {
-    text-align: center;
-    margin-bottom: 20px;
-}
-  
 input[type="text"] {
-    padding: 10px;
-    width: 300px;
-    margin-right: 10px;
+  width: 100%;
+  padding: 10px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
   
 button {
@@ -42,7 +40,13 @@ button:hover{
     color: hotpink;
     background-color: thistle;
 }
-  
+
+@media (max-width: 768px) {
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -85,7 +89,7 @@ button:hover{
     margin-top: 20px;
 }
 .pagination button {
-  padding: 10px 15px;
+  padding: 15px 20px;
   margin: 5px;
   border: none;
   background-color: #007BFF;
@@ -100,16 +104,12 @@ button:hover{
   background-color: #cccccc;
   cursor: not-allowed;
 }
-.search-bar input {
-  width: 100%;
-  padding: 10px;
-  margin-right: 10px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-} 
+
 .top-product {
-    margin-bottom: 30px;
+    border: 1px solid ;
+    border-radius: 8px;
+    background-color:;
+    margin-bottom: 20px;
     text-align: center;
     padding-bottom: 20px;
 }
