@@ -27,7 +27,7 @@ A single-page, no-framework frontend application that displays a list of product
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/not-so-boring-webshop-ui.git
+   git clone https://github.com/zime-dube/not-so-boring-webshop-ui.git
    ## Usage
    
 2. **Open the project:**
@@ -41,7 +41,7 @@ A single-page, no-framework frontend application that displays a list of product
 ├── app.js         # JavaScript logic
 └── README.md      # Project documentation
 
-4.**API Info**:
+4. **API Info**:
 - Images are fetched from the [Imgflip API](https://imgflip.com/api).
 - Only the first 20 memes are used for products.
 - On load, 20 meme-based products are displayed.
